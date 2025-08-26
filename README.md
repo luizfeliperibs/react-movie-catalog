@@ -28,7 +28,7 @@ Siga os passos abaixo para executar a aplicação na sua máquina.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/catalogo-filmes-react.git](https://github.com/seu-usuario/catalogo-filmes-react.git)
+    git clone [https://github.com/seu-usuario/catalogo-filmes-react.git](https://github.com/luizfeliperibs/catalogo-filmes-react.git)
     ```
 
 2.  **Navegue até o diretório do projeto:**
