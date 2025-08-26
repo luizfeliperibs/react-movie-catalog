@@ -1,54 +1,24 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-// Components
-// Properties
-// UseEffects | UseState
+import React from "react";
 
 const App = () => {
-  return (
 
-    <div>
+    return (
 
-      <Card title="Shrek" rating={5} isCool={true}/> 
-      <Card title="The Lion King"/>
-      <Card title="Demon Slayer"/>
+      <main>
 
-    </div>
+        <div className="pattern"></div>
 
-  )
-}
+        <div className="wrapper">
+          
+          <header>
+            <h1>Find <span className="text-gradient">Movies</span> From All Around The World!</h1>
+          </header>
 
-const Card = ({title}) => {
+        </div>
+      </main>
 
-  const [count, setCount] = useState(0);
+    )
 
-  const [hasLiked, setHasLiked] = useState(false);
-
-  useEffect(() => {
-    console.log(`${title} has been liked: ${hasLiked}`)
-  }, [hasLiked]);
-
-  useEffect(() => {
-    console.log('Card rendered')
-  }, []);
-
-  return (
-
-    <div className="card" onClick={() => setCount((prevState) => prevState + 1)}>
-
-      <h2>{title}</h2>
-
-      <h2>{count || null}</h2>
-
-      <button onClick={() => setHasLiked(!hasLiked)}>
-          {hasLiked ? 'Liked' : 'Like'}
-      </button>
-
-    </div>
-  )
 }
 
 export default App
